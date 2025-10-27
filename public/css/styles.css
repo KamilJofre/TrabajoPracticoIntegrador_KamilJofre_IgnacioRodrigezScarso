@@ -21,6 +21,11 @@ body {
 
 }
 
+/* Logo */ 
+.logo img {
+    height: 60px;
+}
+
 
 /* Buscador */
 .busqueda {
