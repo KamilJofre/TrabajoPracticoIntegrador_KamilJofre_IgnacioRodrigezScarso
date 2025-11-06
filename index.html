@@ -101,8 +101,49 @@
                     </article>
 
                 </div>
-                
+
             </section>
+        <!-- Formulario -->
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tenes alguna consulta o queres mas informacion? Completa el formulario y te responderemos a la brevedad!
+            </p>
+
+            <form id="form-contacto" class="form-contacto" onsubmit="return validarForm()">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                    <p id="msgNombre"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+                    <p id="msgApellido"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="telefono">Telefono: </label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 2664000000">
+                    <p id="msgTel"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Correo electronico: </label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+                    <p id="msgMail"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="comentario">Consulta: </label>
+                    <textarea id="comentario" name="comentario" rows="4"
+                        placeholder="Escribe tu consulta aqui..."></textarea>
+                        <p id="msgConsulta"></p>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
 
             
         </main>
