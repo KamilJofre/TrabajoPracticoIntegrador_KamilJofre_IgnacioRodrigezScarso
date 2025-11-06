@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagenes = [
     "../public/img/wallpaper1.png",
     "../public/img/wallpaper2.jpg",
-    "../public/img/wallpaper3.jpeg"
+    "../public/img/wallpaper3.jpeg" 
   ];
 
   let indice = 0;
