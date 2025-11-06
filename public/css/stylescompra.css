@@ -248,6 +248,81 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* articulos/productos */
+#productos{
+    padding-top:10px;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color:#0c0c0c;
+    gap:10px
+}
+
+.producto-card{
+    text-align: center;
+    width:300px ;
+    border: 1px solid #ccc;
+    background-color: #a2a1a1;
+    border-radius: 10px;
+}
+
+.producto-card:hover{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+    transform: scale(1.15);
+}
+
+.producto-card img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    align-items: initial;
+    text-align: center;
+}
+
+
+.producto-card h4, p{
+    color: #1e1e1e;
+}
+
+
 /* FOOTER */
 .footer {
     background-color: #1e1e1e;
