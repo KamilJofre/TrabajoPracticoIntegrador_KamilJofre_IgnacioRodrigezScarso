@@ -248,34 +248,47 @@ body {
 }
 
 
+/* filtros */
+/* boton flotante */
+#btnToggleFiltros{
+    position: fixed;
+    right: 20px;
+    background-color: #c19a6b;
+    color: #000000;
+    border: dashed 2px black;
+    border-radius: 20px;
+    width: 100px;
+    height: 55px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#btnToggleFiltros:hover{
+    background-color: #d4af37;
+    transform: scale(1.1);
+}
 
 
+/* contenido flotante */
+#filtros{
+    position: fixed;
+    bottom: 90px;   
+    right: 10px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#filtros.show{
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
 
 
 

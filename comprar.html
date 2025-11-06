@@ -42,47 +42,45 @@
 
         <main>
             <!-- boton filtro productos -->
-            <button id ="btnToggleFiltros">Filtro|||</button>
+            <button id ="btnToggleFiltros">Filtros|||</button>
                 <div id="filtros">
                     <!-- Categorias -->
-                    <button id ="btnToggleCategorias">Categorias|||</button>
-                        <!-- Principales -->
-                        <div id="categorias" class="hidden">
-                            <label><input type="checkbox" class="filtro-categoria" value="guitarra">Guitarra</label><br>
-                            <label><input type="checkbox" class="filtro-categoria" value="bajo">Bajo</label><br>  
+                    <label class="filtro-titulo">Categorias|||</label><br>
+                    <label><input type="checkbox" class="filtro-categoria" value="guitarra">Guitarra</label><br>
+                    <label><input type="checkbox" class="filtro-categoria" value="bajo">Bajo</label><br>  
 
-                        <!-- Subcategorias -->
-                        <div id="subcategorias" class="hidden">
-                            <label><input type="checkbox" class="filtro-subcategoria" value="acustica">Acustica</label><br>
-                            <label><input type="checkbox" class="filtro-subcategoria" value="electrica">Electrica</label><br>
-                            <label><input type="checkbox" class="filtro-subcategoria" value="criolla">Criolla</label><br>
-                        </div>    
-                    </div>
+                    <!-- Subcategorias -->
+                    <div id="subcategorias" class="hidden">
+                    <label class="filtro-titulo">Guiatarra</label><br>
+                    <label><input type="checkbox" class="filtro-subcategoria" value="acustica">Acustica</label><br>
+                    <label><input type="checkbox" class="filtro-subcategoria" value="electrica">Electrica</label><br>
+                    <label><input type="checkbox" class="filtro-subcategoria" value="criolla">Criolla</label><br>
+                    </div>    
+                    
 
                     <!-- Marcas -->
-                    <button id ="btnToggleMarcas">Marcas|||</button>
-                        <div id="marcas" class="hidden">
-                            <label><input type="checkbox" class="filtro-marca" value="fender">Fender</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="friedman">Friedman</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="gibson">Gibson</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="godin">Godin</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="martin">Martin</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="sire Marcus Miller">Sire Marcus Miller</label><br>
-                            <label><input type="checkbox" class="filtro-marca" value="taylor">Taylor</label><br>
-                        </div>
+                    <label class="filtro-titulo">Marcas|||</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="fender">Fender</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="friedman">Friedman</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="gibson">Gibson</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="godin">Godin</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="martin">Martin</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="sire Marcus Miller">Sire Marcus Miller</label><br>
+                    <label><input type="checkbox" class="filtro-marca" value="taylor">Taylor</label><br>
 
-                    <button id="btn-nextTogglePuentes">Puente|||</button>
-                        <div id="puente" class="hidden">
-                            <label><input type="checkbox" class="filtro-puente" calue="fijo">Fijo</label><br>
-                            <label><input type="checkbox" class="filtro-puente" calue="flotante">Flotante</label><br>
-                        </div>
+
+                    <!-- Puentes -->
+                    <label class="filtro-titulo">Puente|||</label><br>
+                    <label><input type="checkbox" class="filtro-puente" value="fijo">Fijo</label><br>
+                    <label><input type="checkbox" class="filtro-puente" value="flotante">Flotante</label><br>
+
 
                     <!-- Precio -->
                         <div id="precio">
-                            <label>Precio:</label>
+                            <label class="filtro-titulo">Precio:</label>
                             <input type="number" id="precioMin" placeholder="mínimo">
                             <input type="number" id="precioMax" placeholder="máximo">
-                            <button class="filtro">-></button>
+                            <button class="filtroPrecio">-></button>
                         </div>
 
                     <!-- Borrar filtros -->
@@ -214,8 +212,7 @@
                     <p>$1.000</p>
                 </div>
             </div>
-            <button id="miBoton">Haz clic</button>
-
+            
         </main>
         <!-- FOOTER -->
         <footer class="footer">
