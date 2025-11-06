@@ -1,162 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <title>Guitar Store</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Link CSS-->
-    <link rel="stylesheet" href="../../public/css/styles.css">
-</head>
+    <head>
+        <title>Guitar Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Hoja de estilos-->
+        <link rel="stylesheet" href="../../public/css/styles.css">
+    </head>
 
-<body>
+    <body>
+    
+        <header>
+            <!-- Seccion superior con logo y buscador -->
+            <div class=" header-top">
+                <div class="logo">
+                    <img src="../../public/img/Logo.png" alt="Logo Guitar Store">
+                </div>
 
-    <header>
-        <!-- logo y buscador -->
-        <div class=" header-top">
-            <div class="logo">
-                <img src="../../public/img/Logo.png" alt="Logo Guitar Store">
+                <div class="busqueda">
+                    <input type="text" placeholder="Buscar guitarras, accesorios...">
+                    <button>Buscar</button>
+                </div>
             </div>
 
-            <div class="busqueda">
-                <input type="text" placeholder="Buscar guitarras, accesorios...">
-                <button>Buscar</button>
-            </div>
-        </div>
+            <!-- Barra de navegacion principal -->
+            <nav class="navbar">
+                <div class="nav-izquierda">
+                    <a href="index.html">Inicio</a>
+                    <a href="Comprar.html">Comprar</a>
+                    <a href="#">Novedades</a>
+                </div>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="nav-izquierda">
-                <a href="index.html">Inicio</a>
-                <a href="Comprar.html">Comprar</a>
-                <a href="#">Novedades</a>
-            </div>
-
-            <div class="nav-derecha">
-                <a href="#">Ingresa a tu cuenta</a>
-                <a href="#">Crea tu cuenta</a>
-                <a href="#">Carrito</a> 
-            </div>
-        </nav>
-    </header>
+                <div class="nav-derecha">
+                    <a href="#">Ingresa a tu cuenta</a>
+                    <a href="#">Crea tu cuenta</a>
+                    <a href="#">Carrito</a> <!--  logo carrito  -->
+                </div>
+            </nav>
+        </header>
 
 
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="carrusel">
-            <img id="imagen-carrusel" src="../../public/img/wallpaper1.png" alt="Imagen de Guitarras">
-        </div>
-        <button id="btn-prev">⟨</button>
-        <button id="btn-next">⟩</button>
-    </section>
-
-
-    <main>
-        <!-- Encabezado principal -->
-        <section class="presentacion">
-            <h1>Guitar Store</h1>
-            <p>Guitarras eléctricas, acústicas, criollas y bajos con el estilo y la calidad que inspiran a los
-                grandes
-                artistas.</p>
+        <!-- Banner -->
+        <section class="banner" id="banner">
+            <button id="btn-prev">⟨</button>
+            <button id="btn-next">⟩</button>
         </section>
 
-        <!-- Seccion informativa -->
-        <section class="info">
-            <div class="texto-info">
-                <h2>Pasión por las cuerdas</h2>
-                <p>Cada instrumento cuenta una historia.
-                    Ofrecemos instrumentos que se adaptan a tu sonido y a
-                    tu estilo.</p>
-                <p>Trabajamos con marcas líderes y modelos seleccionados para brindarte una experiencia única.</p>
-            </div>
-            <div class="imagen-info">
-                <img src="../../public/img/img_guitarra_main.jpg" alt="Guitarra decorativa">
-            </div>
-        </section>
 
-        <!-- Categorias y tarjetas productos -->
-        <section class="categorias">
-            <h2>Nuestras categorías</h2>
-            <div class="contenedor-categorias">
+        <main>
+            <!-- Encabezado principal -->
+            <section class="presentacion">
+                <h1>Guitar Store</h1>
+                <p>Guitarras eléctricas, acústicas, criollas y bajos con el estilo y la calidad que inspiran a los
+                    grandes
+                    artistas.</p>
+            </section>
 
-                <article class="tarjeta">
-                    <img src="../../public/img/Productos/electrica2_naranja.webp" alt="Guitarras Eléctricas">
-                    <h3>Eléctricas</h3>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="../../public/img/Productos/acustica1.webp" alt="Guitarras Acústicas">
-                    <h3>Acústicas</h3>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="../../public/img/Productos/criolla1.webp" alt="Guitarras Criollas">
-                    <h3>Criollas</h3>
-                </article>
-
-                <article class="tarjeta">
-                    <img src="../../public/img/Productos/bajo1.webp" alt="Bajos">
-                    <h3>Bajos</h3>
-                </article>
-
-            </div>
-        </section>
-        <!-- Formulario -->
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <p>¿Tenes alguna consulta o queres mas informacion? Completa el formulario y te responderemos a la brevedad!
-            </p>
-
-            <form id="form-contacto" class="form-contacto" onsubmit="return validarForm()">
-                <div class="form-grupo">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
-                    <p id="msgNombre"></p>
+            <!-- Seccion informativa -->
+            <section class="info">
+                <div class="texto-info">
+                    <h2>Pasión por las cuerdas</h2>
+                    <p>Cada instrumento cuenta una historia.
+                        Ofrecemos instrumentos que se adaptan a tu sonido y a
+                        tu estilo.</p>
+                    <p>Trabajamos con marcas líderes y modelos seleccionados para brindarte una experiencia única.</p>
                 </div>
-
-                <div class="form-grupo">
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
-                    <p id="msgApellido"></p>
+                <div class="imagen-info">
+                    <img src="../../public/img/img_guitarra_main.jpg" alt="Guitarra decorativa">
                 </div>
+            </section>
 
-                <div class="form-grupo">
-                    <label for="telefono">Telefono: </label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 2664000000">
-                    <p id="msgTel"></p>
+            <!-- Categorias y tarjetas productos -->
+            <section class="categorias">
+                <h2>Nuestras categorías</h2>
+                <div class="contenedor-categorias">
+
+                    <article class="tarjeta">
+                        <img src="../../public/img/Productos/electrica2_naranja.webp" alt="Guitarras Eléctricas">
+                        <h3>Eléctricas</h3>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../../public/img/Productos/acustica1.webp" alt="Guitarras Acústicas">
+                        <h3>Acústicas</h3>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../../public/img/Productos/criolla1.webp" alt="Guitarras Criollas">
+                        <h3>Criollas</h3>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../../public/img/Productos/bajo1.webp" alt="Bajos">
+                        <h3>Bajos</h3>
+                    </article>
+
                 </div>
+            </section>
 
-                <div class="form-grupo">
-                    <label for="email">Correo electronico: </label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
-                    <p id="msgMail"></p>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="comentario">Consulta: </label>
-                    <textarea id="comentario" name="comentario" rows="4"
-                        placeholder="Escribe tu consulta aqui..."></textarea>
-                    <p id="msgConsulta"></p>
-                </div>
-
-                <button type="submit" class="btn-enviar">Enviar</button>
-            </form>
-        </section>
+            
+        </main>
 
 
         <!-- FOOTER -->
         <footer class="footer">
             <p>© 2025 Guitar Store | Todos los derechos reservados</p>
-            <p>Ignacio Rodiriguez | Kamil Jofre Elias </p>
+            <p>Ignacio Rodiriguez  | Kamil Jofre Elias </p>
         </footer>
-    </main>
-
-    <!-- Scripts -->
-    <script src="../app.js"></script>
-
-    </main>
-</body>
-
+    <script src="src/app.js"></script>
+    </body>
 </html>

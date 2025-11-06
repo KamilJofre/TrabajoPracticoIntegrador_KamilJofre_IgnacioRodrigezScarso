@@ -1,227 +1,132 @@
-
+<!DOCTYPE html>
 <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Store - Comprar</title>
+    <link rel="stylesheet" href="../../public/css/stylescompra.css">
+</head>
 
-    <head>
-        <title>Guitar Store</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Hoja de estilos-->
-        <link rel="stylesheet" href="../../public/css/stylescompra.css">
-    </head>
-
-    <body>
-        <header>
-            <!-- Seccion superior con logo y buscador -->
-            <div class=" header-top">
-                <div class="logo">
-                    <img src="../../public/img/Logo.png" alt="Logo Guitar Store">
-                </div>
-
-                <div class="busqueda">
-                    <input type="text" placeholder="Buscar guitarras, accesorios...">
-                    <button>Buscar</button>
-                </div>
+<body>
+    <header>
+        <!--logo y buscador -->
+        <div class="header-top">
+            <div class="logo">
+                <img src="../../public/img/Logo.png" alt="Logo Guitar Store">
             </div>
 
-            <!-- Barra de navegacion principal -->
-            <nav class="navbar">
-                <div class="nav-izquierda">
-                    <a href="index.html">Inicio</a>
-                    <a href="comprar.html">Comprar</a>
-                    <a href="#">Novedades</a>
-                </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar guitarras, accesorios...">
+                <button>Buscar</button>
+            </div>
+        </div>
 
-                <div class="nav-derecha">
-                    <a href="#">Ingresa a tu cuenta</a>
-                    <a href="#">Crea tu cuenta</a>
-                    <a href="#">Carrito</a> <!--  logo carrito  -->
-                </div>
-            </nav>
-        </header>
+        <!-- NavBar -->
+        <nav class="navbar">
+            <div class="nav-izquierda">
+                <a href="index.html">Inicio</a>
+                <a href="comprar.html">Comprar</a>
+                <a href="#">Novedades</a>
+            </div>
 
-        <main>
-            <!-- boton filtro productos -->
-            <button id ="btnToggleFiltros">Filtros|||</button>
-                <div id="filtros">
-                    <!-- Categorias -->
-                    <label class="filtro-titulo">Categorias|||</label><br>
-                    <label><input type="checkbox" class="filtro-categoria" value="guitarra">Guitarra</label><br>
-                    <label><input type="checkbox" class="filtro-categoria" value="bajo">Bajo</label><br>  
+            <div class="nav-derecha">
+                <a href="#">Ingresa a tu cuenta</a>
+                <a href="#">Crea tu cuenta</a>
+                <a href="#">Carrito</a>
+            </div>
+        </nav>
+    </header>
 
-                    <!-- Subcategorias -->
-                    <div id="subcategorias" class="hidden">
-                    <label class="filtro-titulo">Guiatarra</label><br>
-                    <label><input type="checkbox" class="filtro-subcategoria" value="acustica">Acustica</label><br>
-                    <label><input type="checkbox" class="filtro-subcategoria" value="electrica">Electrica</label><br>
-                    <label><input type="checkbox" class="filtro-subcategoria" value="criolla">Criolla</label><br>
-                    </div>    
-                    
+    <main>
+        <section class="productos">
+            <h2>Nuestros instrumentos</h2>
+            <button class="btn-filtros">Filtros</button>
 
-                    <!-- Marcas -->
-                    <label class="filtro-titulo">Marcas|||</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="fender">Fender</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="friedman">Friedman</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="gibson">Gibson</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="godin">Godin</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="martin">Martin</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="sire Marcus Miller">Sire Marcus Miller</label><br>
-                    <label><input type="checkbox" class="filtro-marca" value="taylor">Taylor</label><br>
-
-
-                    <!-- Puentes -->
-                    <label class="filtro-titulo">Puente|||</label><br>
-                    <label><input type="checkbox" class="filtro-puente" value="fijo">Fijo</label><br>
-                    <label><input type="checkbox" class="filtro-puente" value="flotante">Flotante</label><br>
-
-
-                    <!-- Precio -->
-                        <div id="precio">
-                            <label class="filtro-titulo">Precio:</label>
-                            <input type="number" id="precioMin" placeholder="mínimo">
-                            <input type="number" id="precioMax" placeholder="máximo">
-                            <button class="filtroPrecio">-></button>
-                        </div>
-
-                    <!-- Borrar filtros -->
-                    <button id="btnLimpiarFiltros">Limpiar Filtros</button>
-                </div>
-
-
-            <!-- Lista de productos en venta  -->
             <div id="productos">
-                <!-- prductos -->
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="acustica"
-                    data-brand="taylor"
-                    data-price="2500">
-                    <img src="../../public/img/productos/acustica1.webp">
+                <!-- Guitarras Acusticas -->
+                <div class="producto-card">
+                    <img src="../../public/img/productos/acustica1.webp" alt="Guitarra Acústica Taylor 814ce">
                     <h4>Taylor 814ce</h4>
-                    <p>$2.5000</p>
+                    <p>$20499,99</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="acustica"
-                    data-brand="martin"
-                    data-price="1500">
-                    <img src="../../public/img/productos/acustica2.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/acustica2.webp" alt="Guitarra Acústica Martin D-28">
                     <h4>Martin D-28</h4>
-                    <p>$1.5000</p>
+                    <p>$15000,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="electrica"
-                    data-subcategory="fijo"
-                    data-brand="fender"
-                    data-price="900">
-                    <img src="../../public/img/productos/electrica1.webp">
-                    <h4>Fender Telecaster<br>Deluxe '72s</h4>
-                    <p>$900</p>
+                <!-- Guitarras Electricas -->
+                <div class="producto-card">
+                    <img src="../../public/img/productos/electrica1.webp" alt="Fender Telecaster Deluxe '72">
+                    <h4>Fender Telecaster Deluxe '72</h4>
+                    <p>$9000,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="electrica"
-                    data-subcategory="fijo"
-                    data-brand="gibson"
-                    data-price="1500">
-                    <img src="../../public/img/productos/electrica2_naranja.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/electrica2_naranja.webp" alt="Gibson SG Supreme">
                     <h4>Gibson SG Supreme</h4>
-                    <p>$1.5000</p>
+                    <p>$15000,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="electrica"
-                    data-subcategory="flotante"
-                    data-brand="friedman"
-                    data-price="3500">
-                    <img src="../../public/img/productos/electrica3.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/electrica3.webp" alt="Friedman Vintage T">
                     <h4>Friedman Vintage T</h4>
-                    <p>$3.5000</p>
+                    <p>$35000,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="electrica"
-                    data-subcategory="fijo"
-                    data-brand="schecter"
-                    data-price="1200">
-                    <img src="../../public/img/productos/electrica4_violeta.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/electrica4_violeta.webp" alt="Schecter E-1 Fr-S">
                     <h4>Schecter E-1 Fr-S</h4>
-                    <p>$1.2000</p>
+                    <p>$12999,99</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="bajo"
-                    data-brand="schecter"
-                    data-price="1000">
-                    <img src="../../public/img/productos/bajo1.webp">
+                <!-- Bajos -->
+                <div class="producto-card">
+                    <img src="../../public/img/productos/bajo1.webp" alt="Schecter Charles Berthoud">
                     <h4>Schecter Charles Berthoud</h4>
-                    <p>$1.700</p>
+                    <p>$17999,99</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="bajo"
-                    data-brand="marcusMiller"
-                    data-price="1000">
-                    <img src="../../public/img/productos/bajo2.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/bajo2.webp" alt="Sire Marcus Miller V7">
                     <h4>Sire Marcus Miller V7</h4>
                     <p>$1.000</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="bajo"
-                    data-brand="Rickenbacker"
-                    data-price="2750">
-                    <img src="../../public/img/productos/bajo3.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/bajo3.webp" alt="Rickenbacker 4003">
                     <h4>Rickenbacker 4003</h4>
-                    <p>$2.750</p>
+                    <p>$25830,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="criolla"
-                    data-brand="taylor"
-                    data-price="900">
-                    <img src="../../public/img/productos/criolla1.webp">
+                <!-- Guitarras Criollas -->
+                <div class="producto-card">
+                    <img src="../../public/img/productos/criolla1.webp" alt="Taylor Academy 12e-N">
                     <h4>Taylor Academy 12e-N</h4>
-                    <p>$900</p>
+                    <p>$19999,99</p>
                 </div>
                 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="criolla"
-                    data-brand="taylor"
-                    data-price="2000">
-                    <img src="../../public/img/productos/criolla2.webp">
+
+                <div class="producto-card">
+                    <img src="../../public/img/productos/criolla2.webp" alt="Taylor 814 Ce-N">
                     <h4>Taylor 814 Ce-N</h4>
-                    <p>$2.000</p>
+                    <p>$20000,00</p>
                 </div>
 
-                <div class="producto-card"             
-                    data-category="guitarra"
-                    data-subcategory="criolla"
-                    data-brand="godin"
-                    data-price="700">
-                    <img src="../../public/img/productos/criolla3.webp">
+                <div class="producto-card">
+                    <img src="../../public/img/productos/criolla3.webp" alt="Godin Acs Sa">
                     <h4>Godin Acs Sa</h4>
-                    <p>$1.000</p>
+                    <p>$10000,00</p>
                 </div>
             </div>
-            
-        </main>
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p>© 2025 Guitar Store | Todos los derechos reservados</p>
-            <p>Ignacio Rodiriguez  | Kamil Jofre Elias </p>
-            
-        </footer>
+        </section>
+    </main>
 
-    <script src="../app.js"></script>
-    </body>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Guitar Store | Todos los derechos reservados</p>
+        <p>Ignacio Rodriguez | Kamil Jofre Elias</p>
+    </footer>
+</body>
 </html>
-
