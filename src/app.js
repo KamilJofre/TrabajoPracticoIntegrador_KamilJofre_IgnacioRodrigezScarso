@@ -1,44 +1,41 @@
 /* JS de Inex */
 /* Carrusel */
-document.addEventListener("DOMContentLoaded", function () {
 
-  const imagenes = [
+
+const imagenes = [
   "./public/img/wallpaper1.png",
   "./public/img/wallpaper2.jpg",
   "./public/img/wallpaper3.jpeg"
-  ];
+];
 
-  let indice = 0;
+let indice = 0;
 
-  const imgCarrusel = document.getElementById("imagen-carrusel");
-  const btnPrev = document.getElementById("btn-prev");
-  const btnNext = document.getElementById("btn-next");
+const imgCarrusel = document.getElementById("imagen-carrusel");
+const btnPrev = document.getElementById("btn-prev");
+const btnNext = document.getElementById("btn-next");
 
-  function mostrarImagen() {
-    imgCarrusel.style.opacity = 0;
-    setTimeout(() => {
-      imgCarrusel.src = imagenes[indice];
-      imgCarrusel.style.opacity = 1;
-    }, 600);
-  }
+function mostrarImagen() {
+  imgCarrusel.style.opacity = 0;
+  setTimeout(() => {
+    imgCarrusel.src = imagenes[indice];
+    imgCarrusel.style.opacity = 1;
+  }, 600);
+}
 
-  btnNext.addEventListener("click", () => {
-    indice = (indice + 1) % imagenes.length;
-    mostrarImagen();
-  });
-
-  btnPrev.addEventListener("click", () => {
-    indice = (indice - 1 + imagenes.length) % imagenes.length;
-    mostrarImagen();
-  });
-
-  setInterval(() => {
-    indice = (indice + 1) % imagenes.length;
-    mostrarImagen();
-  }, 8000);
-
+btnNext.addEventListener("click", () => {
+  indice = (indice + 1) % imagenes.length;
+  mostrarImagen();
 });
 
+btnPrev.addEventListener("click", () => {
+  indice = (indice - 1 + imagenes.length) % imagenes.length;
+  mostrarImagen();
+});
+
+setInterval(() => {
+  indice = (indice + 1) % imagenes.length;
+  mostrarImagen();
+}, 8000);
 
 
 /* Formulario Contacto */
@@ -112,7 +109,7 @@ function validarForm() {
       nombre +
       " " +
       apellido +
-      ". Pronto recibirás una respuesta a " +
+      ". Pronto recibiras una respuesta a " +
       email +
       ".";
     document.querySelector(".contacto").appendChild(carta);
