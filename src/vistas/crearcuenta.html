@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="../../public/css/stylescrearcuenta.css">
+</head>
+
+<body>
+    <header>
+        <!-- NavBar sin buscador -->
+        <nav class="navbar">
+            <div class="nav-izquierda">
+                <a href="../../index.html">Inicio</a>
+                <a href="./comprar.html">Comprar</a>
+                <a href="#">Novedades</a>
+            </div>
+
+            <div class="nav-derecha">
+                <a href="#">Ingresa a tu cuenta</a>
+                <a href="#">Crea tu cuenta</a>
+                <a href="#">Carrito</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="registro">
+        <h2>Crea tu cuenta y obtene mas beneficios!!</h2>
+
+        <div class="contenedor-form">
+            <!-- Formulario -->
+            <form id="form-cuenta" class="form-cuenta" onsubmit="return validarFormCuenta()">
+                <div class="form-grupo">
+                    <label for="usuario">Nombre de usuario: </label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Elige un nombre de usuario">
+                    <p id="msgUsuario"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Correo electronico: </label>
+                    <input type="text" id="email" name="email" placeholder="ejemplo@email.com">
+                    <p id="msgEmail"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" id="pass" name="pass" placeholder="Ingresa una contraseña">
+                    <p id="msgPass"></p>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="confirmar">Confirmar contraseña: </label>
+                    <input type="password" id="confirmar" name="confirmar" placeholder="Repitir contraseña">
+                    <p id="msgConfirmar"></p>
+                </div>
+
+                <button type="submit" class="btn-crear">Crear cuenta</button>
+            </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Guitar Store | Todos los derechos reservados</p>
+        <p>Ignacio Rodriguez | Kamil Jofre Elias</p>
+    </footer>
+
+    <script src="../cuenta.js"></script>
+</body>
+
+</html>
