@@ -1,0 +1,165 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    background: linear-gradient(135deg, #0c0c0c 65%, #c19a6b 35%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #c19a6b;
+}
+
+/* Formulario */
+.registro {
+    text-align: center;
+    flex: 1;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.registro h2 {
+    color: #c19a6b;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+}
+
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cuenta {
+    background-color: rgba(0, 0, 0, 0.96);
+    padding: 50px;
+    border-radius: 12px;
+    width: 600px;
+    text-align: left;
+}
+
+.form-grupo {
+    margin-bottom: 25px;
+}
+
+.form-grupo label {
+    color: #d4af37;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-grupo input::placeholder {
+    color: #989898;
+}
+
+.form-grupo p {
+    color: #d4af37;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.btn-crear {
+    background-color: #c19a6b;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 35px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.btn-crear:hover {
+    background-color: #d4af37;
+}
+
+/* Creedenciales Usuario */
+.card-usuario {
+    background-color: rgba(0, 0, 0, 0.96);
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: left;
+    color: #f5f5f5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.card-usuario h3 {
+    color: #c19a6b;
+    margin-bottom: 10px;
+}
+
+.card-usuario p {
+    margin: 8px 0;
+    font-style: italic;
+    color: #d4af37;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #2a2a2a;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #bcbcbc;
+}
+
+.footer p:first-child {
+    color: #c19a6b;
+    font-weight: bold;
+}
