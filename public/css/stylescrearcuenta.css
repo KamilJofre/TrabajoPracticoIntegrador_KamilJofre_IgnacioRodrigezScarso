@@ -143,22 +143,20 @@ body {
 
 /* Footer */
 .footer {
-    background-color: darkgray;
+    background-color: rgb(44, 43, 43);
     color: white;
     text-align: center;
     padding: 25px 10px;
     font-size: 0.9rem;
-    border-top: 1px solid rgb(48, 48, 48);
-    width: 100%;
-    margin-top: auto;
+    border-top: 1px solid rgb(21, 20, 20);
 }
 
 .footer p {
     margin: 5px 0;
-    color:grey;
+    color: lightgray;
 }
 
 .footer p:first-child {
-    color: #c19a6b;
+    color: #c19a6b; 
     font-weight: bold;
 }
